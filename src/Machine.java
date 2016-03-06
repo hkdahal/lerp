@@ -107,6 +107,9 @@ public class Machine {
      */
     public void addAdd(int it, int i1, int i2){
         // TODO
+        Instruction addInstruct = new Add(it, i1, i2);
+        instrSeq.add(addInstruct);
+        maxReg++;
     }
 
     /**
@@ -120,6 +123,9 @@ public class Machine {
      */
     public void addSub(int it, int i1, int i2){
         // TODO
+        Instruction subInstruct = new Subtract(it, i1, i2);
+        instrSeq.add(subInstruct);
+        maxReg++;
     }
 
     /**
@@ -133,6 +139,9 @@ public class Machine {
      */
     public void addMul(int it, int i1, int i2){
         // TODO
+        Instruction mulInstruct = new Multiply(it, i1, i2);
+        instrSeq.add(mulInstruct);
+        maxReg++;
     }
 
     /**
@@ -146,6 +155,9 @@ public class Machine {
      */
     public void addDiv(int it, int i1, int i2){
         // TODO
+        Instruction divInstruct = new Divide(it, i1, i2);
+        instrSeq.add(divInstruct);
+        maxReg++;
     }
 
     /**
@@ -158,6 +170,9 @@ public class Machine {
      */
     public void addNeg(int it, int i){
         // TODO
+        Instruction negInstruct = new Negate(it, i);
+        instrSeq.add(negInstruct);
+        maxReg++;
     }
 
     /**
@@ -170,6 +185,9 @@ public class Machine {
      */
     public void addSqrt(int it, int i){
         // TODO
+        Instruction sqrtInstruct = new SquareRoot(it, i);
+        instrSeq.add(sqrtInstruct);
+        maxReg++;
     }
 
     /**
@@ -182,6 +200,9 @@ public class Machine {
      */
     public void addLdi(int it, double num){
         // TODO
+        Instruction ldiInstruct = new LoadIm(it, num);
+        instrSeq.add(ldiInstruct);
+        maxReg++;
     }
 
     /**
@@ -193,6 +214,9 @@ public class Machine {
      */
     public void addPrint(int i){
         // TODO
+        Instruction printInstruct = new Print(i);
+        instrSeq.add(printInstruct);
+        maxReg++;
     }
 
 

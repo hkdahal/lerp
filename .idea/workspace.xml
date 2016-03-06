@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f2f078e-a218-47f1-b22f-61504c98d69f" name="Default" comment="Updated the codes for the instructions. (classes implementing &lt;&lt;interface&gt;&gt; Instruction">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/simple1.mc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/simple1.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/simple2.mc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/simple2.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$Add.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$Add.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$Divide.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$Divide.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$LoadIm.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$LoadIm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$Multiply.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$Multiply.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$Negate.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$Negate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$Print.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$Print.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$SquareRoot.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$SquareRoot.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$Subtract.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$Subtract.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine.class" />
+    <list default="true" id="9f2f078e-a218-47f1-b22f-61504c98d69f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Machine.java" afterPath="$PROJECT_DIR$/src/Machine.java" />
     </list>
@@ -41,17 +28,17 @@
       <file leaf-file-name="Machine.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Machine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22030237">
-              <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+            <state vertical-scroll-proportion="3.4967604">
+              <caret line="253" column="17" selection-start-line="253" selection-start-column="17" selection-end-line="253" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#740#741#0" expanded="true" />
                 <element signature="e#770#771#0" expanded="true" />
                 <element signature="e#1303#1316#0" expanded="true" />
-                <element signature="e#8759#8760#0" expanded="true" />
-                <element signature="e#8818#8819#0" expanded="true" />
-                <element signature="e#12344#12345#0" expanded="true" />
-                <element signature="e#12394#12395#0" expanded="true" />
+                <element signature="e#9635#9636#0" expanded="true" />
+                <element signature="e#9694#9695#0" expanded="true" />
+                <element signature="e#13220#13221#0" expanded="true" />
+                <element signature="e#13270#13271#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,34 +119,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Lerp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lerp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lerp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lerp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lerp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,7 +425,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457285326826</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated the codes for the instructions. (classes implementing &lt;&lt;interface&gt;&gt; Instruction">
+      <created>1457303823045</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1457303823045</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -523,10 +488,10 @@
             <element signature="e#740#741#0" expanded="true" />
             <element signature="e#770#771#0" expanded="true" />
             <element signature="e#1303#1316#0" expanded="true" />
-            <element signature="e#8759#8760#0" expanded="true" />
-            <element signature="e#8818#8819#0" expanded="true" />
-            <element signature="e#12344#12345#0" expanded="true" />
-            <element signature="e#12394#12395#0" expanded="true" />
+            <element signature="e#9635#9636#0" expanded="true" />
+            <element signature="e#9694#9695#0" expanded="true" />
+            <element signature="e#13220#13221#0" expanded="true" />
+            <element signature="e#13270#13271#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -573,17 +538,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Machine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22030237">
-          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+        <state vertical-scroll-proportion="3.4967604">
+          <caret line="253" column="17" selection-start-line="253" selection-start-column="17" selection-end-line="253" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#740#741#0" expanded="true" />
             <element signature="e#770#771#0" expanded="true" />
             <element signature="e#1303#1316#0" expanded="true" />
-            <element signature="e#8759#8760#0" expanded="true" />
-            <element signature="e#8818#8819#0" expanded="true" />
-            <element signature="e#12344#12345#0" expanded="true" />
-            <element signature="e#12394#12395#0" expanded="true" />
+            <element signature="e#9635#9636#0" expanded="true" />
+            <element signature="e#9694#9695#0" expanded="true" />
+            <element signature="e#13220#13221#0" expanded="true" />
+            <element signature="e#13270#13271#0" expanded="true" />
           </folding>
         </state>
       </provider>
