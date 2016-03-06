@@ -72,6 +72,9 @@ public class Machine {
      */
     public void displayInstructions() {
         // TODO
+        for (Instruction i: instrSeq){
+            System.out.println(i.toString());
+        }
     }
 
     /**
@@ -82,6 +85,9 @@ public class Machine {
     public void execute() {
         register = new double[maxReg+1];
         // TODO
+        for (Instruction i: instrSeq){
+            i.execute();
+        }
     }
 
     /**
@@ -306,7 +312,7 @@ public class Machine {
         @Override
         public void execute() {
             // TODO
-            it = i1 + i2;
+            register[it] = register[i1] + register[i2];
         }
         
         /**
@@ -338,7 +344,7 @@ public class Machine {
         
         @Override
         public void execute() {
-            it = i1 - i2;
+            register[it] = register[i1] - register[i2];
             // TODO
         }
         @Override
@@ -366,7 +372,7 @@ public class Machine {
         @Override
         public void execute() {
             // TODO
-            it = i1 * i2;
+            register[it] = register[i1] * register[i2];
         }
         @Override
         public String toString() {
@@ -393,7 +399,7 @@ public class Machine {
         @Override
         public void execute() {
             // TODO
-            it = i1/i2;
+            register[it] = register[i1] / register[i2];
         }
         @Override
         public String toString() {
@@ -418,7 +424,7 @@ public class Machine {
         @Override
         public void execute() {
             // TODO
-            it = 0 - i;
+            register[it] = 0 - register[i];
         }
         @Override
         public String toString() {
@@ -442,7 +448,7 @@ public class Machine {
         @Override
         public void execute() {
             // TODO
-            it = (int)Math.sqrt((double) i);
+            register[it] = Math.sqrt(register[i]);
         }
         @Override
         public String toString() {
@@ -468,7 +474,7 @@ public class Machine {
         @Override
         public void execute() {
             // TODO
-            it = (int) num;
+            register[it] = num;
 
         }
         @Override
@@ -492,7 +498,7 @@ public class Machine {
         @Override
         public void execute() {
             // TODO
-            System.out.println(i);
+            System.out.println(register[i]);
         }
         @Override
         public String toString() { 
