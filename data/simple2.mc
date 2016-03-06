@@ -1,0 +1,4 @@
+LDI R0, 2.0
+LDI R1, 3.0
+ADD R2, R0, R1
+PRINT R2

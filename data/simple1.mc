@@ -1,0 +1,2 @@
+LDI R0, 5.0
+PRINT R0

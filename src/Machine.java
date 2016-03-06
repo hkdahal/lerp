@@ -1,4 +1,5 @@
 
+import javax.xml.bind.SchemaOutputResolver;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -15,7 +16,6 @@ import java.io.IOException;
  */
 
 public class Machine {
-
 
     /**
      * Construct a Machine.
@@ -271,6 +271,9 @@ public class Machine {
          */
         public Add(int it, int i1, int i2){
             // TODO
+            this.it = it;
+            this.i1 = i1;
+            this.i2 = i2;
         }
 
         /**
@@ -279,6 +282,7 @@ public class Machine {
         @Override
         public void execute() {
             // TODO
+            it = i1 + i2;
         }
         
         /**
@@ -302,10 +306,15 @@ public class Machine {
          */
         public Subtract(int it, int i1, int i2){
             // TODO
+            this.it = it;
+            this.i1 = i1;
+            this.i2 = i2;
+
         }
         
         @Override
         public void execute() {
+            it = i1 - i2;
             // TODO
         }
         @Override
@@ -325,11 +334,15 @@ public class Machine {
          */
         public Multiply(int it, int i1, int i2){
             // TODO
+            this.it = it;
+            this.i1 = i1;
+            this.i2 = i2;
         }
         
         @Override
         public void execute() {
             // TODO
+            it = i1 * i2;
         }
         @Override
         public String toString() {
@@ -348,11 +361,15 @@ public class Machine {
          */
         public Divide(int it, int i1, int i2){
             // TODO
+            this.it = it;
+            this.i1 = i1;
+            this.i2 = i2;
         }
         
         @Override
         public void execute() {
             // TODO
+            it = i1/i2;
         }
         @Override
         public String toString() {
@@ -370,11 +387,14 @@ public class Machine {
          */
         public Negate(int it, int i){
             // TODO
+            this.it = it;
+            this.i = i;
         }
         
         @Override
         public void execute() {
             // TODO
+            it = 0 - i;
         }
         @Override
         public String toString() {
@@ -392,10 +412,13 @@ public class Machine {
          */
         public SquareRoot(int it, int i){
             // TODO
+            this.it = it;
+            this.i = i;
         }
         @Override
         public void execute() {
             // TODO
+            it = (int)Math.sqrt((double) i);
         }
         @Override
         public String toString() {
@@ -415,10 +438,14 @@ public class Machine {
          */
         public LoadIm(int it, double num) {
             // TODO
+            this.it = it;
+            this.num = num;
         }
         @Override
         public void execute() {
             // TODO
+            it = (int) num;
+
         }
         @Override
         public String toString() {
@@ -436,10 +463,12 @@ public class Machine {
          */
         public Print(int i) {
             // TODO
+            this.i = i;
         }
         @Override
-        public void execute() { 
+        public void execute() {
             // TODO
+            System.out.println(i);
         }
         @Override
         public String toString() { 
