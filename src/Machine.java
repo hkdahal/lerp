@@ -71,7 +71,6 @@ public class Machine {
      *
      */
     public void displayInstructions() {
-        // TODO
         for (Instruction i: instrSeq){
             System.out.println(i.toString());
         }
@@ -84,7 +83,6 @@ public class Machine {
      */
     public void execute() {
         register = new double[maxReg+1];
-        // TODO
         for (Instruction i: instrSeq){
             i.execute();
         }
@@ -112,7 +110,6 @@ public class Machine {
      * 
      */
     public void addAdd(int it, int i1, int i2){
-        // TODO
         Instruction addInstruct = new Add(it, i1, i2);
         instrSeq.add(addInstruct);
         maxReg++;
@@ -128,7 +125,6 @@ public class Machine {
      * 
      */
     public void addSub(int it, int i1, int i2){
-        // TODO
         Instruction subInstruct = new Subtract(it, i1, i2);
         instrSeq.add(subInstruct);
         maxReg++;
@@ -144,7 +140,6 @@ public class Machine {
      * 
      */
     public void addMul(int it, int i1, int i2){
-        // TODO
         Instruction mulInstruct = new Multiply(it, i1, i2);
         instrSeq.add(mulInstruct);
         maxReg++;
@@ -160,7 +155,6 @@ public class Machine {
      * 
      */
     public void addDiv(int it, int i1, int i2){
-        // TODO
         Instruction divInstruct = new Divide(it, i1, i2);
         instrSeq.add(divInstruct);
         maxReg++;
@@ -175,7 +169,6 @@ public class Machine {
      * 
      */
     public void addNeg(int it, int i){
-        // TODO
         Instruction negInstruct = new Negate(it, i);
         instrSeq.add(negInstruct);
         maxReg++;
@@ -190,7 +183,6 @@ public class Machine {
      * 
      */
     public void addSqrt(int it, int i){
-        // TODO
         Instruction sqrtInstruct = new SquareRoot(it, i);
         instrSeq.add(sqrtInstruct);
         maxReg++;
@@ -205,7 +197,6 @@ public class Machine {
      * 
      */
     public void addLdi(int it, double num){
-        // TODO
         Instruction ldiInstruct = new LoadIm(it, num);
         instrSeq.add(ldiInstruct);
         maxReg++;
@@ -219,7 +210,6 @@ public class Machine {
      * 
      */
     public void addPrint(int i){
-        // TODO
         Instruction printInstruct = new Print(i);
         instrSeq.add(printInstruct);
         maxReg++;
@@ -300,7 +290,6 @@ public class Machine {
          *
          */
         public Add(int it, int i1, int i2){
-            // TODO
             this.it = it;
             this.i1 = i1;
             this.i2 = i2;
@@ -311,7 +300,6 @@ public class Machine {
          */
         @Override
         public void execute() {
-            // TODO
             register[it] = register[i1] + register[i2];
         }
         
@@ -335,7 +323,6 @@ public class Machine {
          *
          */
         public Subtract(int it, int i1, int i2){
-            // TODO
             this.it = it;
             this.i1 = i1;
             this.i2 = i2;
@@ -345,7 +332,6 @@ public class Machine {
         @Override
         public void execute() {
             register[it] = register[i1] - register[i2];
-            // TODO
         }
         @Override
         public String toString() {
@@ -363,7 +349,6 @@ public class Machine {
          *
          */
         public Multiply(int it, int i1, int i2){
-            // TODO
             this.it = it;
             this.i1 = i1;
             this.i2 = i2;
@@ -371,7 +356,6 @@ public class Machine {
         
         @Override
         public void execute() {
-            // TODO
             register[it] = register[i1] * register[i2];
         }
         @Override
@@ -390,7 +374,6 @@ public class Machine {
          *
          */
         public Divide(int it, int i1, int i2){
-            // TODO
             this.it = it;
             this.i1 = i1;
             this.i2 = i2;
@@ -398,7 +381,6 @@ public class Machine {
         
         @Override
         public void execute() {
-            // TODO
             register[it] = register[i1] / register[i2];
         }
         @Override
@@ -416,14 +398,12 @@ public class Machine {
          *
          */
         public Negate(int it, int i){
-            // TODO
             this.it = it;
             this.i = i;
         }
         
         @Override
         public void execute() {
-            // TODO
             register[it] = 0 - register[i];
         }
         @Override
@@ -441,13 +421,11 @@ public class Machine {
          *
          */
         public SquareRoot(int it, int i){
-            // TODO
             this.it = it;
             this.i = i;
         }
         @Override
         public void execute() {
-            // TODO
             register[it] = Math.sqrt(register[i]);
         }
         @Override
@@ -467,13 +445,11 @@ public class Machine {
          *
          */
         public LoadIm(int it, double num) {
-            // TODO
             this.it = it;
             this.num = num;
         }
         @Override
         public void execute() {
-            // TODO
             register[it] = num;
 
         }
@@ -492,12 +468,10 @@ public class Machine {
          *
          */
         public Print(int i) {
-            // TODO
             this.i = i;
         }
         @Override
         public void execute() {
-            // TODO
             System.out.println(register[i]);
         }
         @Override
