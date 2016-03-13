@@ -24,7 +24,7 @@ public class Holder implements Expression {
      */
     public ANFVarExp getVar(){
         // TODO
-        return null; // TODO replace
+        return t; // TODO replaced
     }
 
     @Override

@@ -19,6 +19,7 @@ public abstract class UnaryExp implements Expression {
      */
     public UnaryExp(Expression exp){
         // TODO
+        this.exp = exp;
     }
 
     /**
@@ -28,7 +29,7 @@ public abstract class UnaryExp implements Expression {
      */
     public Expression getExp(){
         // TODO
-        return null; // TODO replace
+        return exp; // TODO replaced
     }
 
     @Override

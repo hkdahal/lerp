@@ -8,7 +8,8 @@ public abstract class ANFUnOp implements ANFOp {
 
     private ANFVarExp x;
 
-    public ANFUnOp(){} // TODO eliminate this line after implementing subclasses
+    //public ANFUnOp(){}
+    // TODO eliminate this line after implementing subclasses
     
     /**
      * Initialize the operand.  This constructor can only be
@@ -18,6 +19,7 @@ public abstract class ANFUnOp implements ANFOp {
      */
     public ANFUnOp(ANFVarExp x){
         // TODO
+        this.x = x;
     }
 
     /**
@@ -27,7 +29,7 @@ public abstract class ANFUnOp implements ANFOp {
      */
     public ANFVarExp getX(){
         // TODO
-        return null; // TODO replace
+        return x; // TODO replaced
     }
 
     @Override

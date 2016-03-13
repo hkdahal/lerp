@@ -9,7 +9,8 @@ public abstract class ANFBinOp implements ANFOp {
     private ANFVarExp x1;
     private ANFVarExp x2;
 
-    public ANFBinOp(){} // TODO eliminate this line after implementing subclasses
+    //public ANFBinOp(){}
+    // TODO eliminate this line after implementing subclasses
     
     /**
      * Initialize the two operands.  This constructor can only be
@@ -22,6 +23,8 @@ public abstract class ANFBinOp implements ANFOp {
      */
     public ANFBinOp(ANFVarExp x1, ANFVarExp x2){
         // TODO
+        this.x1 = x1;
+        this.x2 = x2;
     }
 
     /**
@@ -31,7 +34,7 @@ public abstract class ANFBinOp implements ANFOp {
      */
     public ANFVarExp getX1(){
         // TODO
-        return null; // TODO replace
+        return x1; // TODO replaced
     }
 
     /**
@@ -41,7 +44,7 @@ public abstract class ANFBinOp implements ANFOp {
      */
     public ANFVarExp getX2(){
         // TODO
-        return null; // TODO replace
+        return x2; // TODO replaced
     }
 
     @Override

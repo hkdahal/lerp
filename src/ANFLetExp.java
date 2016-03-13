@@ -20,11 +20,17 @@ public class ANFLetExp implements ANFExp {
      */
     public ANFLetExp(ANFVarExp x, ANFOp op, ANFExp body){
         // TODO
+        this.x = x;
+        this.op = op;
+        this.body = body;
     }
 
     @Override
     public void compile(Machine m){
         // TODO
+        op.compile(x.getN(), m);
+        body.compile(m);
+        x.compile(m);
     }
 
     @Override

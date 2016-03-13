@@ -17,6 +17,8 @@ public class ANFVarExp implements ANFExp {
      */
     public ANFVarExp(){
         // TO DO
+        n = count;
+        count++;
     }
     
     /**
@@ -25,6 +27,7 @@ public class ANFVarExp implements ANFExp {
      */
     public static void reset(){
         // TO DO
+        count = 0;
     }
     
     /**
@@ -34,12 +37,21 @@ public class ANFVarExp implements ANFExp {
      */
     public int getN(){
         // TO DO
-        return 0; // replace
+        return n; // replaced
     }
-    
+
+
+    /**
+     * Compile the ANF-expression to target code.
+     *
+     * @param m the Machine where the instructions are being added
+     */
     @Override
     public void compile(Machine m){
         // TO DO
+        // target code??
+        m.addPrint(getN());
+
     }
     
     @Override

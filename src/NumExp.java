@@ -14,6 +14,7 @@ public class NumExp implements Expression {
      */
     public NumExp(double num){
         // TODO
+        this.num = num;
     }
 
     @Override
