@@ -30,7 +30,6 @@ public class ANFLetExp implements ANFExp {
         // TODO
         op.compile(x.getN(), m);
         body.compile(m);
-        x.compile(m);
     }
 
     @Override

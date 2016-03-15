@@ -8,7 +8,6 @@ public abstract class UnaryExp implements Expression {
 
     private Expression exp;
 
-    public UnaryExp(){} // TODO eliminate this line after implementing subclasses
     
     /**
      * Initialize the operand.  This constructor can only be
@@ -35,7 +34,11 @@ public abstract class UnaryExp implements Expression {
     @Override
     public ANFExp toANF(){
         // TODO
-        return null; // TODO replace
+        Triple<ANFVarExp, ANFOp, Expression> myTriple = extract();
+        ANFVarExp var = myTriple.first();
+        ANFOp anOp = myTriple.second();
+        Expression holdVar = myTriple.third();
+        return new ANFLetExp(var, anOp, holdVar.toANF());
     }
 
     @Override

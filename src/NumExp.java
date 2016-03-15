@@ -20,13 +20,20 @@ public class NumExp implements Expression {
     @Override
     public ANFExp toANF(){
         // TODO
-        return null; // TODO replace
+        ANFVarExp var = new ANFVarExp();
+        ANFOp anOp = new ANFConstOp(num);
+        return new ANFLetExp(var, anOp, var); // TODO replaced
     }
 
     @Override
     public Triple<ANFVarExp, ANFOp, Expression> extract(){
-        // TODO
-        return null; // TODO replace
+        ANFVarExp var = new ANFVarExp();
+        ANFOp anOp = new ANFConstOp(num);
+        Holder holdVar =new Holder(var);
+        //ANFExp
+
+        return new Triple
+                <ANFVarExp, ANFOp, Expression>(var,anOp, holdVar);
     }
 
     @Override

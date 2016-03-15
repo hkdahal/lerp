@@ -21,6 +21,8 @@ public abstract class BinaryExp implements Expression {
      */
     public BinaryExp(Expression exp1, Expression exp2){
         // TODO
+        this.exp1 = exp1;
+        this.exp2 = exp2;
     }
 
     /**
@@ -30,7 +32,7 @@ public abstract class BinaryExp implements Expression {
      */
     public Expression getExp1(){
         // TODO
-        return null; // TODO replace
+        return exp1; // TODO replaced
     }
 
     /**
@@ -40,13 +42,16 @@ public abstract class BinaryExp implements Expression {
      */
     public Expression getExp2(){
         // TODO
-        return null; // TODO replace
+        return exp2; // TODO replaced
     }
 
     @Override
     public ANFExp toANF(){
-        // TODO
-        return null; // TODO replace
+        Triple<ANFVarExp, ANFOp, Expression> myTriple = extract();
+        ANFVarExp var = myTriple.first();
+        ANFOp anOp = myTriple.second();
+        Expression holdVar = myTriple.third();
+        return new ANFLetExp(var, anOp, holdVar.toANF());
     }
 
     @Override

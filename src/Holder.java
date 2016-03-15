@@ -15,6 +15,7 @@ public class Holder implements Expression {
      */
     public Holder(ANFVarExp t){
         // TODO
+        this.t = t;
     }
 
     /**
@@ -30,7 +31,7 @@ public class Holder implements Expression {
     @Override
     public ANFExp toANF(){
         // TODO
-        return null; // TODO replace
+        return getVar(); // TODO replaced
     }
 
     @Override

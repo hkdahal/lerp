@@ -13,12 +13,23 @@ public class NegExp extends UnaryExp {
      */
     public NegExp(Expression exp){
         // TODO
+        super(exp);
     }
 
     @Override
     public Triple<ANFVarExp, ANFOp, Expression> extract(){
         // TODO
-        return null; // TODO replace
+        ANFVarExp var = new ANFVarExp();
+
+        Expression holdVar = getExp();
+        if (holdVar instanceof  Holder){
+            ANFVarExp newVar = ((Holder) holdVar).getVar();
+            ANFOp anOp = new ANFNegOp(newVar);
+            return new Triple<>(var,anOp, new Holder(var));
+        }
+        Triple <ANFVarExp, ANFOp, Expression> newTriple = holdVar.extract();
+        return new Triple<>(newTriple.first(), newTriple.second(), new
+                NegExp(newTriple.third()) );
     }
 
     @Override
