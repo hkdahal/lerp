@@ -39,7 +39,7 @@ public class AddExp extends BinaryExp {
             Triple<ANFVarExp, ANFOp, Expression> newTriple2 = anExp2.extract();
 
 
-            return new Triple<>(var, newTriple2.second(), new AddExp
+            return new Triple<>(newTriple2.first(), newTriple2.second(), new AddExp
                     (newTriple2.third(), anExp1));
 
         }

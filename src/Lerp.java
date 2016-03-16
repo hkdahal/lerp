@@ -19,6 +19,7 @@ public class Lerp {
         Parser pars = new Parser();
         Expression expr = pars.parse(codeText);
         System.out.println(expr.toANF());
+        System.out.println();
     }
 
     private static void repl(){

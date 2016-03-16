@@ -37,8 +37,8 @@ public class MulExp extends BinaryExp {
 
             Triple<ANFVarExp, ANFOp, Expression> newTriple2 = anExp2.extract();
 
-            return new Triple<>(var, newTriple2.second(), new MulExp
-                    (newTriple2.third(), anExp1));
+            return new Triple<>(newTriple2.first(), newTriple2.second(), new
+                    MulExp(newTriple2.third(), anExp1));
         }
     }
 

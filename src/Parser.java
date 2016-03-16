@@ -40,48 +40,43 @@ public class Parser {
 
     private static Expression getExpression(){
         // TODO
-        Expression anExp;
-        if (!tokens[0].equals("(")){
+
+        if(tokens[pos].equals("(")){
             pos++;
-            anExp = new NumExp((Double.parseDouble(tokens[0])));
-            return anExp;
+            if (tokens[pos].equals("+")){
+                pos++;
+                Expression anExp1 = getExpression();
+                Expression anExp2 = getExpression();
+                if (tokens[pos].equals(")")){
+                    pos++;
+                    return new AddExp(anExp1, anExp2);
+                }
+            }else if (tokens[pos].equals("*")){
+                pos++;
+                Expression anExp1 = getExpression();
+                Expression anExp2 = getExpression();
+                if (tokens[pos].equals(")")){
+                    pos++;
+                    return new MulExp(anExp1, anExp2);
+                }
+            }else if (tokens[pos].equals("/")){
+                pos++;
+                Expression anExp1 = getExpression();
+                Expression anExp2 = getExpression();
+                if (tokens[pos].equals(")")){
+                    pos++;
+                    return new DivExp(anExp1, anExp2);
+                }
+            }else if (tokens[pos].equals("-")){
+                pos++;
+                Expression anExp1 = getExpression();
+                Expression anExp2 = getExpression();
+                if (tokens[pos].equals(")")){
+                    pos++;
+                    return new SubExp(anExp1, anExp2);
+                }
+            }
         }
-        if (tokens[1].equals("+")){
-            double d1 = Double.parseDouble(tokens[2]);
-            double d2 = Double.parseDouble(tokens[3]);
-            Expression exp1 = new NumExp(d1);
-            Expression exp2 = new NumExp(d2);
-            anExp = new AddExp(exp1, exp2);
-            pos += 5;
-            return anExp;
-        }
-        if (tokens[1].equals("*")){
-            double d1 = Double.parseDouble(tokens[2]);
-            double d2 = Double.parseDouble(tokens[3]);
-            Expression exp1 = new NumExp(d1);
-            Expression exp2 = new NumExp(d2);
-            anExp = new MulExp(exp1, exp2);
-            pos += 5;
-            return anExp;
-        }
-        if (tokens[1].equals("/")){
-            double d1 = Double.parseDouble(tokens[2]);
-            double d2 = Double.parseDouble(tokens[3]);
-            Expression exp1 = new NumExp(d1);
-            Expression exp2 = new NumExp(d2);
-            anExp = new DivExp(exp1, exp2);
-            pos += 5;
-            return anExp;
-        }
-        if (tokens[1].equals("-")){
-            double d1 = Double.parseDouble(tokens[2]);
-            double d2 = Double.parseDouble(tokens[3]);
-            Expression exp1 = new NumExp(d1);
-            Expression exp2 = new NumExp(d2);
-            anExp = new SubExp(exp1, exp2);
-            pos += 5;
-            return anExp;
-        }
-        return null;
+        return new NumExp((Double.parseDouble(tokens[pos++])));
     }
 }
