@@ -21,7 +21,7 @@ public class ANFDivOp extends ANFBinOp {
     @Override
     public void compile(int dest, Machine m){
         // TODO
-        m.addDiv(dest, getX1().getN(), getX2().getN());
+        m.addDiv(dest, getX2().getN(), getX1().getN());
     }
 
     @Override

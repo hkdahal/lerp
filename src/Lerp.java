@@ -35,7 +35,7 @@ public class Lerp {
               return; // return only when input is the empty line
           }else {
               compile(codeText);
-              m.displayInstructions();
+              m.execute();
           }
       }
     }

@@ -22,7 +22,7 @@ public class ANFMulOp extends ANFBinOp {
     @Override
     public void compile(int dest, Machine m){
         // TODO
-        m.addMul(dest, getX1().getN(), getX2().getN());
+        m.addMul(dest, getX2().getN(), getX1().getN());
     }
 
     @Override

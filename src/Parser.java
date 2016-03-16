@@ -44,13 +44,16 @@ public class Parser {
             pos++;
             if (tokens[pos].equals("+")){
                 pos++;
+                if (tokens.length < pos + 1){
+                    Errors.error("No full expression given", null);
+                }
                 Expression anExp1 = getExpression();
                 Expression anExp2 = getExpression();
                 if (tokens.length > pos && tokens[pos].equals(")")){
                     pos++;
                     return new AddExp(anExp1, anExp2);
                 }else{
-                    Errors.error("No close parenthesis", null);
+                    Errors.error("Not valid Expression", null);
                 }
             }else if (tokens[pos].equals("*")){
                 pos++;
@@ -90,6 +93,8 @@ public class Parser {
                     pos++;
                     return new NegExp(anExp1);
                 }
+            }else {
+                Errors.error("No any valid operation found", null);
             }
         }
         return new NumExp((Double.parseDouble(tokens[pos++])));

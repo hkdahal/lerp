@@ -1,0 +1,570 @@
+Compiling your program...
+
+===== Test 1
+
+Your output did not match the correct output.
+Your output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+MUL R3, R2, R1
+ADD R4, R3, R0
+PRINT R4
+----------
+Correct output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+MUL R3, R1, R2
+ADD R4, R0, R3
+PRINT R4
+----------
+Differences (OUT.1 is yours; answer-2.1 is correct):
+*** OUT.1       Wed Mar 16 17:24:58 2016
+--- answer-2.1  Sun Mar  6 13:55:31 2016
+***************
+*** 1,6 ****
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! MUL R3, R2, R1
+! ADD R4, R3, R0
+  PRINT R4
+--- 1,6 ----
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! MUL R3, R1, R2
+! ADD R4, R0, R3
+  PRINT R4
+
+
+===== Test 2
+Your output is correct!
+
+===== Test 3
+
+Your output did not match the correct output.
+Your output:
+LDI R0, 2.0
+LDI R1, 3.0
+ADD R2, R1, R0
+PRINT R2
+----------
+Correct output:
+LDI R0, 2.0
+LDI R1, 3.0
+ADD R2, R0, R1
+PRINT R2
+----------
+Differences (OUT.3 is yours; answer-2.3 is correct):
+*** OUT.3       Wed Mar 16 17:24:59 2016
+--- answer-2.3  Sun Mar  6 11:10:58 2016
+***************
+*** 1,4 ****
+  LDI R0, 2.0
+  LDI R1, 3.0
+! ADD R2, R1, R0
+  PRINT R2
+--- 1,4 ----
+  LDI R0, 2.0
+  LDI R1, 3.0
+! ADD R2, R0, R1
+  PRINT R2
+
+
+===== Test 4
+
+Your output did not match the correct output.
+Your output:
+LDI R0, 2.0
+LDI R1, 3.0
+SUB R2, R1, R0
+PRINT R2
+----------
+Correct output:
+LDI R0, 2.0
+LDI R1, 3.0
+SUB R2, R0, R1
+PRINT R2
+----------
+Differences (OUT.4 is yours; answer-2.4 is correct):
+*** OUT.4       Wed Mar 16 17:24:59 2016
+--- answer-2.4  Sun Mar  6 11:10:58 2016
+***************
+*** 1,4 ****
+  LDI R0, 2.0
+  LDI R1, 3.0
+! SUB R2, R1, R0
+  PRINT R2
+--- 1,4 ----
+  LDI R0, 2.0
+  LDI R1, 3.0
+! SUB R2, R0, R1
+  PRINT R2
+
+
+===== Test 5
+
+Your output did not match the correct output.
+Your output:
+LDI R0, 2.0
+LDI R1, 3.0
+MUL R2, R1, R0
+PRINT R2
+----------
+Correct output:
+LDI R0, 2.0
+LDI R1, 3.0
+MUL R2, R0, R1
+PRINT R2
+----------
+Differences (OUT.5 is yours; answer-2.5 is correct):
+*** OUT.5       Wed Mar 16 17:25:00 2016
+--- answer-2.5  Sun Mar  6 11:10:59 2016
+***************
+*** 1,4 ****
+  LDI R0, 2.0
+  LDI R1, 3.0
+! MUL R2, R1, R0
+  PRINT R2
+--- 1,4 ----
+  LDI R0, 2.0
+  LDI R1, 3.0
+! MUL R2, R0, R1
+  PRINT R2
+
+
+===== Test 6
+
+Your output did not match the correct output.
+Your output:
+LDI R0, 2.0
+LDI R1, 3.0
+DIV R2, R1, R0
+PRINT R2
+----------
+Correct output:
+LDI R0, 2.0
+LDI R1, 3.0
+DIV R2, R0, R1
+PRINT R2
+----------
+Differences (OUT.6 is yours; answer-2.6 is correct):
+*** OUT.6       Wed Mar 16 17:25:01 2016
+--- answer-2.6  Sun Mar  6 11:10:59 2016
+***************
+*** 1,4 ****
+  LDI R0, 2.0
+  LDI R1, 3.0
+! DIV R2, R1, R0
+  PRINT R2
+--- 1,4 ----
+  LDI R0, 2.0
+  LDI R1, 3.0
+! DIV R2, R0, R1
+  PRINT R2
+
+
+===== Test 7
+Your output is correct!
+
+===== Test 8
+Your output is correct!
+
+===== Test 9
+
+Your output did not match the correct output.
+Your output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+MUL R3, R2, R1
+SUB R4, R3, R0
+PRINT R4
+----------
+Correct output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+MUL R3, R1, R2
+SUB R4, R0, R3
+PRINT R4
+----------
+Differences (OUT.9 is yours; answer-2.9 is correct):
+*** OUT.9       Wed Mar 16 17:25:03 2016
+--- answer-2.9  Sun Mar  6 11:10:58 2016
+***************
+*** 1,6 ****
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! MUL R3, R2, R1
+! SUB R4, R3, R0
+  PRINT R4
+--- 1,6 ----
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! MUL R3, R1, R2
+! SUB R4, R0, R3
+  PRINT R4
+
+
+===== Test 10
+
+Your output did not match the correct output.
+Your output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+MUL R3, R2, R1
+MUL R4, R3, R0
+PRINT R4
+----------
+Correct output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+MUL R3, R1, R2
+MUL R4, R0, R3
+PRINT R4
+----------
+Differences (OUT.10 is yours; answer-2.10 is correct):
+*** OUT.10      Wed Mar 16 17:25:03 2016
+--- answer-2.10 Sun Mar  6 11:10:58 2016
+***************
+*** 1,6 ****
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! MUL R3, R2, R1
+! MUL R4, R3, R0
+  PRINT R4
+--- 1,6 ----
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! MUL R3, R1, R2
+! MUL R4, R0, R3
+  PRINT R4
+
+
+===== Test 11
+
+Your output did not match the correct output.
+Your output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+MUL R3, R2, R1
+DIV R4, R3, R0
+PRINT R4
+----------
+Correct output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+MUL R3, R1, R2
+DIV R4, R0, R3
+PRINT R4
+----------
+Differences (OUT.11 is yours; answer-2.11 is correct):
+*** OUT.11      Wed Mar 16 17:25:04 2016
+--- answer-2.11 Sun Mar  6 11:10:58 2016
+***************
+*** 1,6 ****
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! MUL R3, R2, R1
+! DIV R4, R3, R0
+  PRINT R4
+--- 1,6 ----
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! MUL R3, R1, R2
+! DIV R4, R0, R3
+  PRINT R4
+
+
+===== Test 12
+
+Your output did not match the correct output.
+Your output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+SUB R3, R2, R1
+ADD R4, R3, R0
+PRINT R4
+----------
+Correct output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+SUB R3, R1, R2
+ADD R4, R0, R3
+PRINT R4
+----------
+Differences (OUT.12 is yours; answer-2.12 is correct):
+*** OUT.12      Wed Mar 16 17:25:05 2016
+--- answer-2.12 Sun Mar  6 11:10:58 2016
+***************
+*** 1,6 ****
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! SUB R3, R2, R1
+! ADD R4, R3, R0
+  PRINT R4
+--- 1,6 ----
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! SUB R3, R1, R2
+! ADD R4, R0, R3
+  PRINT R4
+
+
+===== Test 13
+
+Your output did not match the correct output.
+Your output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+ADD R3, R2, R1
+ADD R4, R3, R0
+PRINT R4
+----------
+Correct output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+ADD R3, R1, R2
+ADD R4, R0, R3
+PRINT R4
+----------
+Differences (OUT.13 is yours; answer-2.13 is correct):
+*** OUT.13      Wed Mar 16 17:25:06 2016
+--- answer-2.13 Sun Mar  6 11:10:58 2016
+***************
+*** 1,6 ****
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! ADD R3, R2, R1
+! ADD R4, R3, R0
+  PRINT R4
+--- 1,6 ----
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! ADD R3, R1, R2
+! ADD R4, R0, R3
+  PRINT R4
+
+
+===== Test 14
+
+Your output did not match the correct output.
+Your output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+DIV R3, R2, R1
+ADD R4, R3, R0
+PRINT R4
+----------
+Correct output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+DIV R3, R1, R2
+ADD R4, R0, R3
+PRINT R4
+----------
+Differences (OUT.14 is yours; answer-2.14 is correct):
+*** OUT.14      Wed Mar 16 17:25:06 2016
+--- answer-2.14 Sun Mar  6 11:10:58 2016
+***************
+*** 1,6 ****
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! DIV R3, R2, R1
+! ADD R4, R3, R0
+  PRINT R4
+--- 1,6 ----
+  LDI R0, 2.0
+  LDI R1, 3.0
+  LDI R2, 4.0
+! DIV R3, R1, R2
+! ADD R4, R0, R3
+  PRINT R4
+
+
+===== Test 15
+
+Your output did not match the correct output.
+Your output:
+Expression must start with a number or open parenthesis.
+----------
+Correct output:
+LDI R0, 2.0
+NEG R1, R0
+LDI R2, 3.0
+LDI R3, 4.0
+MUL R4, R2, R3
+ADD R5, R1, R4
+PRINT R5
+----------
+Differences (OUT.15 is yours; answer-2.15 is correct):
+*** OUT.15      Wed Mar 16 17:25:07 2016
+--- answer-2.15 Sun Mar  6 11:10:58 2016
+***************
+*** 1 ****
+! Expression must start with a number or open parenthesis.
+--- 1,7 ----
+! LDI R0, 2.0
+! NEG R1, R0
+! LDI R2, 3.0
+! LDI R3, 4.0
+! MUL R4, R2, R3
+! ADD R5, R1, R4
+! PRINT R5
+
+
+===== Test 16
+
+Your output did not match the correct output.
+Your output:
+LDI R0, 2.0
+SQRT R1, R0
+LDI R2, 3.0
+LDI R3, 4.0
+MUL R4, R3, R2
+ADD R5, R4, R1
+PRINT R5
+----------
+Correct output:
+LDI R0, 2.0
+SQRT R1, R0
+LDI R2, 3.0
+LDI R3, 4.0
+MUL R4, R2, R3
+ADD R5, R1, R4
+PRINT R5
+----------
+Differences (OUT.16 is yours; answer-2.16 is correct):
+*** OUT.16      Wed Mar 16 17:25:08 2016
+--- answer-2.16 Sun Mar  6 11:10:58 2016
+***************
+*** 2,7 ****
+  SQRT R1, R0
+  LDI R2, 3.0
+  LDI R3, 4.0
+! MUL R4, R3, R2
+! ADD R5, R4, R1
+  PRINT R5
+--- 2,7 ----
+  SQRT R1, R0
+  LDI R2, 3.0
+  LDI R3, 4.0
+! MUL R4, R2, R3
+! ADD R5, R1, R4
+  PRINT R5
+
+
+===== Test 17
+
+Your output did not match the correct output.
+Your output:
+Expression must start with a number or open parenthesis.
+----------
+Correct output:
+LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+MUL R3, R1, R2
+SQRT R4, R3
+NEG R5, R4
+ADD R6, R0, R5
+PRINT R6
+----------
+Differences (OUT.17 is yours; answer-2.17 is correct):
+*** OUT.17      Wed Mar 16 17:25:08 2016
+--- answer-2.17 Sun Mar  6 11:10:58 2016
+***************
+*** 1 ****
+! Expression must start with a number or open parenthesis.
+--- 1,8 ----
+! LDI R0, 2.0
+! LDI R1, 3.0
+! LDI R2, 4.0
+! MUL R3, R1, R2
+! SQRT R4, R3
+! NEG R5, R4
+! ADD R6, R0, R5
+! PRINT R6
+
+
+===== Test 18
+
+Your output did not match the correct output.
+Your output:
+Lerp] LDI R0, 2.0
+PRINT R0
+Lerp] LDI R0, 3.14
+PRINT R0
+Lerp] LDI R0, 2.0
+LDI R1, 3.0
+ADD R2, R1, R0
+PRINT R2
+Lerp] LDI R0, 2.0
+LDI R1, 3.0
+LDI R2, 4.0
+MUL R3, R2, R1
+ADD R4, R3, R0
+PRINT R4
+Lerp] Expression must start with a number or open parenthesis.
+----------
+Correct output:
+Lerp] 2.0
+Lerp] 3.14
+Lerp] 5.0
+Lerp] 14.0
+Lerp] -2.23606797749979
+Lerp] 0.25
+Lerp] ----------
+Differences (OUT.18 is yours; answer-2.18 is correct):
+*** OUT.18      Wed Mar 16 17:25:09 2016
+--- answer-2.18 Sun Mar  6 17:18:51 2016
+***************
+*** 1,15 ****
+! Lerp] LDI R0, 2.0
+! PRINT R0
+! Lerp] LDI R0, 3.14
+! PRINT R0
+! Lerp] LDI R0, 2.0
+! LDI R1, 3.0
+! ADD R2, R1, R0
+! PRINT R2
+! Lerp] LDI R0, 2.0
+! LDI R1, 3.0
+! LDI R2, 4.0
+! MUL R3, R2, R1
+! ADD R4, R3, R0
+! PRINT R4
+! Lerp] Expression must start with a number or open parenthesis.
+--- 1,7 ----
+! Lerp] 2.0
+! Lerp] 3.14
+! Lerp] 5.0
+! Lerp] 14.0
+! Lerp] -2.23606797749979
+! Lerp] 0.25
+! Lerp]
+\ No newline at end of file

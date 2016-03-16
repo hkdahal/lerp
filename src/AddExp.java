@@ -21,8 +21,6 @@ public class AddExp extends BinaryExp {
     @Override
     public Triple<ANFVarExp, ANFOp, Expression> extract() {
 
-
-
         Expression anExp1 = getExp1();
         Expression anExp2 = getExp2();
         if (anExp1 instanceof Holder && anExp2 instanceof Holder) {

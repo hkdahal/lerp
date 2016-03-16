@@ -21,7 +21,7 @@ public class ANFAddOp extends ANFBinOp {
     @Override
     public void compile(int dest, Machine m){
         // TODO
-        m.addAdd(dest, getX1().getN(), getX2().getN());
+        m.addAdd(dest, getX2().getN(), getX1().getN());
     }
 
     @Override
