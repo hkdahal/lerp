@@ -29,16 +29,18 @@ public class SubExp extends BinaryExp {
             ANFVarExp newVar2 = ((Holder) anExp2).getVar();
             ANFOp anOp = new ANFSubOp(newVar1, newVar2);
             return new Triple<>(var,anOp, new Holder(var));
+        } else if (!(anExp1 instanceof Holder)) {
+            Triple<ANFVarExp, ANFOp, Expression> newTriple1 = anExp1.extract();
+            return new Triple<>(newTriple1.first(), newTriple1.second(), new
+                    SubExp(newTriple1.third(), anExp2));
+        } else {
+
+            Triple<ANFVarExp, ANFOp, Expression> newTriple2 = anExp2.extract();
+
+
+            return new Triple<>(var, newTriple2.second(), new
+                    SubExp(newTriple2.third(), anExp1));
         }
-
-
-        Triple <ANFVarExp, ANFOp, Expression> newTriple1 = anExp1.extract();
-        Triple <ANFVarExp, ANFOp, Expression> newTriple2 = anExp2.extract();
-
-
-        return new Triple<>(var, new ANFSubOp(newTriple1.first(),
-                newTriple2.first()),  new SubExp(newTriple1.third(),
-                newTriple2.third()) );
     }
 
     @Override

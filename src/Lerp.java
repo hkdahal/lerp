@@ -15,12 +15,18 @@ public class Lerp {
 
     private static void compile(String codeText){
       // TODO
+        m.clear();
+        Parser pars = new Parser();
+        Expression expr = pars.parse(codeText);
+        System.out.println(expr.toANF());
     }
 
     private static void repl(){
       Scanner sc = new Scanner(System.in);
       while(true){
           System.out.print("Lerp] ");
+          Parser pars = new Parser();
+          //pars.parse("5.0");
           // TODO
           return; // TODO return only when input is the empty line
       }
