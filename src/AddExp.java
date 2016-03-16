@@ -21,11 +21,12 @@ public class AddExp extends BinaryExp {
     @Override
     public Triple<ANFVarExp, ANFOp, Expression> extract() {
 
-        ANFVarExp var = new ANFVarExp();
+
 
         Expression anExp1 = getExp1();
         Expression anExp2 = getExp2();
         if (anExp1 instanceof Holder && anExp2 instanceof Holder) {
+            ANFVarExp var = new ANFVarExp();
             ANFVarExp newVar1 = ((Holder) anExp1).getVar();
             ANFVarExp newVar2 = ((Holder) anExp2).getVar();
             ANFOp anOp = new ANFAddOp(newVar1, newVar2);

@@ -18,11 +18,10 @@ public class NegExp extends UnaryExp {
 
     @Override
     public Triple<ANFVarExp, ANFOp, Expression> extract(){
-        // TODO
-        ANFVarExp var = new ANFVarExp();
 
         Expression holdVar = getExp();
         if (holdVar instanceof  Holder){
+            ANFVarExp var = new ANFVarExp();
             ANFVarExp newVar = ((Holder) holdVar).getVar();
             ANFOp anOp = new ANFNegOp(newVar);
             return new Triple<>(var,anOp, new Holder(var));

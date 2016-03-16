@@ -19,15 +19,15 @@ public class SqrtExp extends UnaryExp {
     @Override
     public Triple<ANFVarExp, ANFOp, Expression> extract(){
         // TODO
-        ANFVarExp var = new ANFVarExp();
 
-        Expression holdVar = getExp();
-        if (holdVar instanceof  Holder){
-            ANFVarExp newVar = ((Holder) holdVar).getVar();
+        Expression anExp = getExp();
+        if (anExp instanceof  Holder){
+            ANFVarExp var = new ANFVarExp();
+            ANFVarExp newVar = ((Holder) anExp).getVar();
             ANFOp anOp = new ANFSqrtOp(newVar);
             return new Triple<>(var,anOp, new Holder(var));
         }
-        Triple <ANFVarExp, ANFOp, Expression> newTriple = holdVar.extract();
+        Triple <ANFVarExp, ANFOp, Expression> newTriple = anExp.extract();
         return new Triple<>(newTriple.first(), newTriple.second(), new
                 SqrtExp(newTriple.third()) );
     }
