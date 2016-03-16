@@ -40,16 +40,17 @@ public class Parser {
 
     private static Expression getExpression(){
         // TODO
-
         if(tokens[pos].equals("(")){
             pos++;
             if (tokens[pos].equals("+")){
                 pos++;
                 Expression anExp1 = getExpression();
                 Expression anExp2 = getExpression();
-                if (tokens[pos].equals(")")){
+                if (tokens.length > pos && tokens[pos].equals(")")){
                     pos++;
                     return new AddExp(anExp1, anExp2);
+                }else{
+                    Errors.error("No close parenthesis", null);
                 }
             }else if (tokens[pos].equals("*")){
                 pos++;
@@ -67,13 +68,27 @@ public class Parser {
                     pos++;
                     return new DivExp(anExp1, anExp2);
                 }
-            }else if (tokens[pos].equals("-")){
+            }else if (tokens[pos].equals("-") && tokens.length > 4){
                 pos++;
                 Expression anExp1 = getExpression();
                 Expression anExp2 = getExpression();
                 if (tokens[pos].equals(")")){
                     pos++;
                     return new SubExp(anExp1, anExp2);
+                }
+            }else if (tokens[pos].equals("sqrt")){
+                pos++;
+                Expression anExp1 = getExpression();
+                if (tokens[pos].equals(")")){
+                    pos++;
+                    return new SqrtExp(anExp1);
+                }
+            }else if (tokens[pos].equals("-") && tokens.length <= 4){
+                pos++;
+                Expression anExp1 = getExpression();
+                if (tokens[pos].equals(")")){
+                    pos++;
+                    return new NegExp(anExp1);
                 }
             }
         }

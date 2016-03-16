@@ -1,3 +1,4 @@
+import javax.lang.model.type.NullType;
 import java.util.Scanner;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -16,20 +17,26 @@ public class Lerp {
     private static void compile(String codeText){
       // TODO
         m.clear();
-        Parser pars = new Parser();
-        Expression expr = pars.parse(codeText);
-        System.out.println(expr.toANF());
-        System.out.println();
+        ANFVarExp.reset();
+        Expression expr = Parser.parse(codeText);
+        expr.toANF().compile(m);
+        //System.out.println();
     }
 
     private static void repl(){
       Scanner sc = new Scanner(System.in);
       while(true){
           System.out.print("Lerp] ");
-          Parser pars = new Parser();
-          //pars.parse("5.0");
-          // TODO
-          return; // TODO return only when input is the empty line
+          String codeText = "";
+          String line = sc.nextLine();
+          codeText = codeText + " " + line;
+
+          if (line.equals("")){
+              return; // return only when input is the empty line
+          }else {
+              compile(codeText);
+              m.displayInstructions();
+          }
       }
     }
 
