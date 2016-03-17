@@ -1,0 +1,83 @@
+commit 9cd9cf43b05eaa3e239b64ad1a59c267eb3d5fdb
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Wed Mar 16 20:17:39 2016 -0400
+
+    Made changes to ANF*Op, and Exp files along with a fix for correctly treating negate and subtract expressions.
+
+commit b0caa5fac6ab9d5b223454d9c9fc513502570db8
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Wed Mar 16 18:01:55 2016 -0400
+
+    Correctly ANF*Op are accounted.
+
+commit 755c13f17bdc99dfb955b0a9c31af7c5b797966f
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Wed Mar 16 17:20:41 2016 -0400
+
+    Made changes: Fixed the count of ANFVarExp bug
+
+commit 5b116cb58b162ee746fa5138de651d7eb4f71e8a
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Wed Mar 16 16:48:10 2016 -0400
+
+    Need to fix a few bugs: correct variable count and expression toANF
+
+commit 8f44bf73bb0a69dcd557a10d026c07c307ab400c
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Wed Mar 16 16:00:50 2016 -0400
+
+    Parser seems to be working.
+
+commit efd2a7805866808e0f60c8e6db9cf22bc7e771fb
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Wed Mar 16 13:34:13 2016 -0400
+
+    Binary Expressions work well now.
+
+commit 4c3d41201f79144682f22febdb272effa86121ed
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Tue Mar 15 13:29:47 2016 -0400
+
+    Wrote the general codes for all the Expression classes to my best knowledge.
+
+commit 078d18a20cfe76d9453dfb40bb05e40db1fde21c
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Sun Mar 13 11:20:31 2016 -0400
+
+    Updated codes for: ANFExp classes and ANFOp classes.
+
+commit 6b60daa707faf396a1139d030be6f8fdafeeb77c
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Fri Mar 11 14:32:23 2016 -0500
+
+    Saving everything to submit.
+
+commit 5c71d83c1c68819d941ef9651fd9101277b30141
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Sun Mar 6 18:37:25 2016 -0500
+
+    Fixed everything, and the program does the necessary works correctly.
+
+commit b8faffba0bf1243bf78e3218b7bc2cf7f5c7852b
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Sun Mar 6 17:45:06 2016 -0500
+
+    Added the codes to all the "add" instructions.
+
+commit 7dbfae2e4ab126b8246e7b653458e93fb9e51896
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Sun Mar 6 17:37:02 2016 -0500
+
+    Updated the codes for the instructions. (classes implementing <<interface>> Instruction
+
+commit 1e7c02baf7bf07baa3ac96fae811f32b38914753
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Sun Mar 6 12:30:15 2016 -0500
+
+    Setting up the downloaded files
+
+commit aa4062c04877bffd887a52847c156b4d79562d8c
+Author: hxd1478 <hxd1478@rit.edu>
+Date:   Sun Mar 6 12:28:46 2016 -0500
+
+    Initial revision: downloaded and setup

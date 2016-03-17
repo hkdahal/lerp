@@ -95,7 +95,7 @@ public class Parser {
                 Errors.error("No any valid operation found", null);
             }
         }
-        if (!tokens[pos].matches("\\d")){
+        if (!(tokens[pos].matches("\\d") || tokens[pos].matches("\\d+\\.\\d+"))){
             Errors.error("Not a valid number", null);
         }
         return new NumExp((Double.parseDouble(tokens[pos++])));
