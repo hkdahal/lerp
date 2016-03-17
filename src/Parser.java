@@ -71,13 +71,18 @@ public class Parser {
                     pos++;
                     return new DivExp(anExp1, anExp2);
                 }
-            }else if (tokens[pos].equals("-") && tokens.length > 4){
+            }else if (tokens[pos].equals("-")){
                 pos++;
                 Expression anExp1 = getExpression();
-                Expression anExp2 = getExpression();
-                if (tokens[pos].equals(")")){
+                if (tokens[pos].equals(")") ){
                     pos++;
-                    return new SubExp(anExp1, anExp2);
+                    return new NegExp(anExp1);
+                }else{
+                    Expression anExp2 = getExpression();
+                    if (tokens[pos].equals(")")) {
+                        pos++;
+                        return new SubExp(anExp1, anExp2);
+                    }
                 }
             }else if (tokens[pos].equals("sqrt")){
                 pos++;
@@ -86,16 +91,12 @@ public class Parser {
                     pos++;
                     return new SqrtExp(anExp1);
                 }
-            }else if (tokens[pos].equals("-") && tokens.length <= 4){
-                pos++;
-                Expression anExp1 = getExpression();
-                if (tokens[pos].equals(")")){
-                    pos++;
-                    return new NegExp(anExp1);
-                }
             }else {
                 Errors.error("No any valid operation found", null);
             }
+        }
+        if (!tokens[pos].matches("\\d")){
+            Errors.error("Not a valid number", null);
         }
         return new NumExp((Double.parseDouble(tokens[pos++])));
     }

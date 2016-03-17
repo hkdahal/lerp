@@ -40,7 +40,7 @@ public class DivExp extends BinaryExp {
 
 
             return new Triple<>(newTriple2.first(), newTriple2.second(), new DivExp
-                    (newTriple2.third(), anExp1));
+                    (anExp1, newTriple2.third()));
         }
     }
 

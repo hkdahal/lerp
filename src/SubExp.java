@@ -40,7 +40,7 @@ public class SubExp extends BinaryExp {
 
 
             return new Triple<>(newTriple2.first(), newTriple2.second(), new
-                    SubExp(newTriple2.third(), anExp1));
+                    SubExp(anExp1, newTriple2.third()));
         }
     }
 

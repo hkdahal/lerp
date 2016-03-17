@@ -22,12 +22,11 @@ public class ANFSubOp extends ANFBinOp {
     @Override
     public void compile(int dest, Machine m){
         // TODO
-        m.addSub(dest, getX2().getN(), getX1().getN());
+        m.addSub(dest, getX1().getN(), getX2().getN());
     }
 
     @Override
     public String toString(){
         return "(- " + super.toString() + ")";
     }
-    
 }
