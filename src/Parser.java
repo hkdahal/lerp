@@ -94,7 +94,7 @@ public class Parser {
                     return new SqrtExp(anExp1);
                 }
             }else {
-                String info = "Unexpected operator: \'" + tokens[pos] + "\'";
+                String info = "Unexpected operator: \'" + tokens[pos] + "\'.";
                 Errors.error(info, null);
             }
         }
