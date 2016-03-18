@@ -45,7 +45,7 @@ public class Parser {
             if (tokens[pos].equals("+")){
                 pos++;
                 if (tokens.length < pos + 1){
-                    Errors.error("No full expression given", null);
+                    Errors.error("Unexpected end of input.", null);
                 }
                 Expression anExp1 = getExpression();
                 Expression anExp2 = getExpression();
@@ -53,7 +53,9 @@ public class Parser {
                     pos++;
                     return new AddExp(anExp1, anExp2);
                 }else{
-                    Errors.error("Not valid Expression", null);
+                    String message = "Unexpected token: " + tokens[pos] + "; " +
+                            "expected ).";
+                    Errors.error(message, null);
                 }
             }else if (tokens[pos].equals("*")){
                 pos++;
@@ -92,7 +94,7 @@ public class Parser {
                     return new SqrtExp(anExp1);
                 }
             }else {
-                Errors.error("No any valid operation found", null);
+                Errors.error("Unexpected operator", tokens[pos]);
             }
         }
         if (!(tokens[pos].matches("\\d") || tokens[pos].matches("\\d+\\.\\d+"))){
