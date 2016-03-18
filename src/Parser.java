@@ -94,7 +94,8 @@ public class Parser {
                     return new SqrtExp(anExp1);
                 }
             }else {
-                Errors.error("Unexpected operator", tokens[pos]);
+                String info = "Unexpected operator: \'" + tokens[pos] + "\'";
+                Errors.error(info, null);
             }
         }
         if (!(tokens[pos].matches("\\d") || tokens[pos].matches("\\d+\\.\\d+"))){
