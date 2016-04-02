@@ -40,6 +40,13 @@ public class Parser {
 
 
     // TODO any other helper methods
+
+    /**
+     * This method takes in an operator string and then returns an expression
+     * looking at it and making sure the tokens are properly provided.
+     * @param operator - a string representing expression type
+     * @return - an expression
+     */
     private static Expression grabExpression(String operator){
         pos++;
         Expression anExp1 = getExpression();
@@ -67,6 +74,11 @@ public class Parser {
         return null; // shouldn't get here
     }
 
+    /**
+     * This method comes to play when the token is "-" and checks if the
+     * expression should be negate or a subtract expression.
+     * @return an Expression - either sub or neg exp
+     */
     private static Expression negSubExp(){
         Expression anExp1 = getExpression();
         if (tokens.length < pos+1){
@@ -83,10 +95,22 @@ public class Parser {
         if (tokens[pos].equals(")")) {
             pos++;
             return new SubExp(anExp1, anExp2);
+        }else{
+            String message = "Unexpected token: " + tokens[pos] + "; " +
+                    "expected ).";
+            Errors.error(message, null);
         }
-        return null; // Error message?
+        return null;
     }
 
+    /**
+     * This method recursively gets the expression going through the item in
+     * a string as per the position (index).
+     * This method uses grabExpression and negSubExp helper methods.
+     * Different types of expressions are being returned looking at the token
+     * and error messages are raised/returned whenever necessary.
+     * @return Expression or an error message
+     */
     private static Expression getExpression(){
         if (tokens.length < pos+1){
             Errors.error("Unexpected end of input.", null);
@@ -122,7 +146,7 @@ public class Parser {
             }
         }
         if (!(theToken.matches("\\d+") || theToken.matches("\\d+\\.\\d+"))){
-            Errors.error("Not a valid token", tokens[pos]);
+            Errors.error("Unexpected token", tokens[pos]);
         }
         return new NumExp((Double.parseDouble(tokens[pos++])));
     }

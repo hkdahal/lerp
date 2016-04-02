@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f2f078e-a218-47f1-b22f-61504c98d69f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+    <list default="true" id="9f2f078e-a218-47f1-b22f-61504c98d69f" name="Default" comment="Commented">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/AddExp.class" afterPath="$PROJECT_DIR$/out/production/Lerp/AddExp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$Add.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$Add.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$Divide.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$Divide.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$LoadIm.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$LoadIm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$Multiply.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$Multiply.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$Negate.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$Negate.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$Print.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$Print.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$SquareRoot.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$SquareRoot.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine$Subtract.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine$Subtract.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Machine.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Machine.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lerp/Parser.class" afterPath="$PROJECT_DIR$/out/production/Lerp/Parser.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AddExp.java" afterPath="$PROJECT_DIR$/src/AddExp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Machine.java" afterPath="$PROJECT_DIR$/src/Machine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Parser.java" afterPath="$PROJECT_DIR$/src/Parser.java" />
     </list>
     <ignored path="Lerp.iws" />
@@ -32,8 +41,8 @@
       <file leaf-file-name="Lerp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lerp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+            <state relative-caret-position="782">
+              <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,11 +50,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Machine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Machine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="980">
+              <caret line="191" column="7" selection-start-line="191" selection-start-column="7" selection-end-line="191" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Parser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+            <state relative-caret-position="221">
+              <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -75,7 +94,6 @@
         <option value="$PROJECT_DIR$/Lerp.iml" />
         <option value="$PROJECT_DIR$/data/simple2.mc" />
         <option value="$PROJECT_DIR$/data/simple1.mc" />
-        <option value="$PROJECT_DIR$/src/Machine.java" />
         <option value="$PROJECT_DIR$/data/test.txt" />
         <option value="$PROJECT_DIR$/src/ANFVarExp.java" />
         <option value="$PROJECT_DIR$/src/ANFConstOp.java" />
@@ -98,11 +116,12 @@
         <option value="$PROJECT_DIR$/src/ANFAddOp.java" />
         <option value="$PROJECT_DIR$/src/DivExp.java" />
         <option value="$PROJECT_DIR$/src/MulExp.java" />
-        <option value="$PROJECT_DIR$/src/Lerp.java" />
         <option value="$PROJECT_DIR$/data/test2.txt" />
         <option value="$PROJECT_DIR$/data/test1.txt" />
         <option value="$PROJECT_DIR$/src/AddExp.java" />
         <option value="$PROJECT_DIR$/src/TestExp.java" />
+        <option value="$PROJECT_DIR$/src/Machine.java" />
+        <option value="$PROJECT_DIR$/src/Lerp.java" />
         <option value="$PROJECT_DIR$/src/Parser.java" />
       </list>
     </option>
@@ -143,9 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,6 +211,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,7 +230,7 @@
       <recent name="C:\Users\harik\Desktop\myLab CS\Projects\Lerp\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestExp">
+  <component name="RunManager" selected="Application.Lerp">
     <configuration default="false" name="Machine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Machine" />
@@ -665,8 +684,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestExp" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Lerp" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Lerp" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestExp" />
         <item index="2" class="java.lang.String" itemvalue="Application.Machine" />
       </list>
     </recent_temporary>
@@ -687,7 +706,8 @@
       <workItem from="1458526953491" duration="275000" />
       <workItem from="1459275471090" duration="635000" />
       <workItem from="1459367876252" duration="3878000" />
-      <workItem from="1459531484092" duration="4687000" />
+      <workItem from="1459531484092" duration="5802000" />
+      <workItem from="1459545361943" duration="6176000" />
     </task>
     <task id="LOCAL-00001" summary="Initial revision: downloaded and setup">
       <created>1457285326826</created>
@@ -794,11 +814,18 @@
       <option name="project" value="LOCAL" />
       <updated>1458337730156</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Re-formatted Parser with additional helper functions.">
+      <created>1459537360544</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1459537360544</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9475000" />
+    <option name="totallyTimeSpent" value="16766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -812,7 +839,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.384273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40059346" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -883,7 +910,8 @@
     <MESSAGE value="Made changes to ANF*Op, and Exp files along with a fix for correctly treating negate and subtract expressions." />
     <MESSAGE value="Changes: Error messages" />
     <MESSAGE value="Made changes to correctly print erorr message: 'foo'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made changes to correctly print erorr message: 'foo'" />
+    <MESSAGE value="Re-formatted Parser with additional helper functions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Re-formatted Parser with additional helper functions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1184,15 +1212,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Machine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="80" column="19" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1244,28 +1263,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestExp.java" />
+    <entry file="file://$PROJECT_DIR$/src/Machine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="191" column="7" selection-start-line="191" selection-start-column="7" selection-end-line="191" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lerp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+        <state relative-caret-position="782">
+          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        <state relative-caret-position="221">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
           <folding />
         </state>
       </provider>

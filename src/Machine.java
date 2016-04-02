@@ -171,7 +171,8 @@ public class Machine {
     public void addNeg(int it, int i){
         Instruction negInstruct = new Negate(it, i);
         instrSeq.add(negInstruct);
-        maxReg++;
+        maxReg = Math.max(maxReg, Math.max(it, i));
+        //maxReg++;
     }
 
     /**
